@@ -120,17 +120,27 @@ submitScoreEl.addEventListener("click", function() {
             usersValue = userCheck.split(",");
         }
 
-        
-
-
-
-
-
-
-
+        if(quizUserDetails == usersValue[0] && highScore == usersValue[1]) {
+            localStorage.setItem(quizUserDetails, value);
+            alert(highScore + " " + "is the last entry for user's initials" + enterInitialsTextAreaEl.value + ". New entry will not be added.");
+            break;
+        } else if(enterInitialsTextAreaEl.value == "") {
+            alert("Please enter your initials");
+            break;
+        } else if(quizUserDetails == userCheck[0] && highScore > usersValue[1]) {
+            localStorage.setItem(quizUserDetails, value);
+            alert("New high score of " + highScore + "has been entered. \nThe previous score was " + usersValue[1]);
+            break;
+        } else if(quizUserDetails == usersValue[0] && highScore < usersValue[1]) {
+            localStorage.setItem(quizUserDetails, value);
+            alert("The current high score of " + usersValue[1] + " is higher than this score. This entry is not valid.");
+            break;
+        } else {
+            localStorage.setItem(quizUserDetails, value);
+            alert("Your score of " + highScore + " has been entered!.");
+            break;
+        }
     }
-
-}
-)
+});
 
 //event listeners
