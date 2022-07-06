@@ -186,22 +186,27 @@ header {
  /* hover answer buttons */
 #answer1:hover{
     background-color: yellow;
+    color: blue;
 }
 
 #answer2:hover{
     background-color: yellow;
+    color: blue;
 }
 
 #answer3:hover{
     background-color: yellow;
+    color: blue;
 }
 
 #answer4:hover{
     background-color: yellow;
+    color: blue;
 }
 
 #submit-score:hover{
     background-color: yellow;
+    color: blue;
 }
 
 #answer-validation-grid {
