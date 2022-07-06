@@ -1,6 +1,3 @@
-//Collaborated with Janvier Mbilizi
-
-// DOM elements
 var questionsEl = document.querySelector("#questions");
 var timerEl = document.querySelector("#time");
 var choicesEl = document.querySelector("#choices");
