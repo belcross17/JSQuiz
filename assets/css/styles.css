@@ -1,0 +1,285 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 22px;
+    background-color: black;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    list-style: none;
+    color: lawngreen;
+    height: 60px;
+    font-size: 2vw;
+    padding-top: 10px;
+    padding-left: 10px;
+    padding-right: 10px;
+    font-size: 22px;
+  }
+
+  .btnheader {
+    border-radius: 10px;
+    text-decoration: none;
+    border: 0;
+    outline: 0; 
+    color: lawngreen;
+    font-size: 20px;
+    background-color: black;
+}
+
+.btnheader:hover {
+    background-color: blue;
+}
+
+.btn {
+    border-radius: 12px;
+    border: 0;
+    outline: 0; 
+    color: white;
+    font-size: 10px;
+}
+
+#content {
+    margin-left: 25%;
+    margin-right: 25%;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: center;
+    margin-top: 50px;
+    font-size: 22px;
+}
+
+#maincontainer {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr) 2fr 1fr;
+    grid-template-rows: repeat(10, 1fr);
+    gap: 10px 10px;
+    font-size: 22px;
+}
+
+#displayquestion {
+    text-align: center;
+    align-self: baseline;
+    grid-column: 2 / span 2;
+    grid-row: 1 / span 5;
+    place-self: center;
+    font-size: 30px;
+    color: lawngreen;
+}
+
+#displayfinalscore {
+    grid-column: 1 / span 2;
+    grid-row: 6 / span 1;
+    font-size: 15px;
+}
+
+#enterinitials {
+    grid-column: 1 / span 1;
+    grid-row: 7 / span 1;
+    font-size: 15px;
+}
+
+#enterinitialstextarea {
+    grid-column: 2 / span 1;
+    grid-row: 7 / span 1;
+    font-size: 15px;
+    resize: none;
+}
+
+#submitscore {
+    grid-column: 3 / span 1;
+    grid-row: 7 / span 1;
+    padding: 10px 10px 10px 10px;
+    border-radius: 10%;
+    border: 0;
+    outline: 0;
+    background-color: blue;
+    color: white;
+    font-size: 15px;
+}
+
+#start-quiz {
+    grid-column: 2 / span 2;
+    grid-row: 5 / span 1;
+    padding: 10px 10px 10px 10px;
+    border-radius: 10%;
+    border: 0;
+    outline: 0; 
+    background-color: blue;
+    place-self: center;
+    color: white;
+    font-size: 15px;
+}
+
+#answer1 {
+    grid-column: 1 / span 2;
+    grid-row: 6 / span 1;
+    padding: 10px 10px 10px 10px;
+    border-radius: 10%;
+    border: 0;
+    outline: 0; /* Remove border around button */
+    background-color: blue;
+    color: white;
+    font-size: 15px;
+    margin-left: 25px;
+}
+
+#answer2 {
+    grid-column: 1 / span 2;
+    grid-row: 7 / span 1;
+    padding: 10px 10px 10px 10px;
+    border-radius: 10%;
+    border: 0;
+    outline: 0; /* Remove border around button */
+    background-color: blue;
+    color: white;
+    font-size: 15px;
+    margin-left: 25px;
+    margin-left: 25px;
+
+}
+
+#answer3 {
+    grid-column: 1 / span 2;
+    grid-row: 8 / span 1;
+    padding: 10px 10px 10px 10px;
+    border-radius: 10%;
+    border: 0;
+    outline: 0; /* Remove border around button */
+    background-color: blue;
+    color: white;
+    font-size: 15px;
+    margin-left: 25px;
+}
+
+#answer4 {
+    grid-column: 1 / span 2;
+    grid-row: 9 / span 1;
+    padding: 10px 10px 10px 10px;
+    border-radius: 10%;
+    border: 0;
+    outline: 0; /* Remove border around button */
+    background-color: blue;
+    color: white;
+    font-size: 15px;
+    margin-left: 25px;
+}
+
+#answer1:hover{
+    background-color: yellow;
+}
+
+#answer2:hover{
+    background-color: yellow;
+}
+
+#answer3:hover{
+    background-color: yellow;
+}
+
+#answer4:hover{
+    background-color: yellow;
+}
+
+#submitscore:hover{
+    background-color: yellow;
+}
+
+#answervalidationgrid {
+    display: grid;
+    grid-template-columns: 4fr;
+    grid-template-rows: repeat(2, 1fr);
+    gap: 10px 10px; 
+    font-size: 22px;
+}
+
+#answervalidation {
+    text-align: left;
+    grid-column: 1 / span 4;
+    grid-row: 1 / span 2;
+}
+
+@media screen and (max-width: 768px) {
+    #answer1:hover{
+        background-color: orange;
+    }
+
+    #answer2:hover{
+        background-color: orange;
+    }
+
+    #answer3:hover{
+        background-color: orange;
+    }
+
+    #answer4:hover{
+        background-color: orange;
+    }
+
+    #submitScore:hover{
+        background-color: orange;
+    }
+
+    #questionDisplay {
+        font-size: 25px;
+    }
+    
+    #answer1 {
+        grid-column: 2 / span 2;
+    }
+    
+    #answer2 {
+        grid-column: 2 / span 2;   
+    }
+    
+    #answer3 {
+        grid-column: 2 / span 2;
+    }
+
+    #answer4 {
+        grid-column: 2 / span 2;
+    }
+}
+
+
+   /* This will be applied on any screen smaller than 575px */
+@media screen and  (max-width: 575px) {
+
+    #answer1:hover{
+        background-color: orange;
+    }
+
+    #answer2:hover{
+        background-color: orange;
+    }
+
+    #answer3:hover{
+        background-color: orange;
+    }
+
+    #answer4:hover{
+        background-color: orange;
+    }
+
+    #submitScore:hover{
+        background-color: orange;
+    }
+
+    #content {
+        margin-left: 5%;
+        margin-right: 5%;
+    }
+
+    #displayquestion {
+        grid-column: 2 / span 2;
+        font-size: 15px;
+    }
+  }
