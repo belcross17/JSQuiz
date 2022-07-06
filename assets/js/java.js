@@ -24,7 +24,15 @@ answerValidationEl.style.display = "none";
 enterInitialsTextAreaEl.style.display = "none";
 
 //questions
-
+var questionsObj = {
+    correct: {
+        0 : "How do you select an Id from your html file and link it to a var in your JS file?",
+        1 : "Which type of symbol is used to tell JS that you want to make an array?",
+        2 : "What tool can be use in JS to debug your code?",
+        3 : "what tool can be use to see console.log results in your browser?",
+        4 : "What does JS stand for?"
+    }
+}
 //all available answers
 
 //start timer
