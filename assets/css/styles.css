@@ -10,6 +10,8 @@ body {
     background-color: black;
 }
 
+
+/*timer + high score section*/
 header {
     display: flex;
     justify-content: space-between;
@@ -37,6 +39,10 @@ header {
 .btnheader:hover {
     background-color: blue;
 }
+
+/*End timer + high score section*/
+
+/* Content section */
 
 .btn {
     border-radius: 12px;
@@ -75,6 +81,8 @@ header {
     color: lawngreen;
 }
 
+/* scoring section */
+
 #displayfinalscore {
     grid-column: 1 / span 2;
     grid-row: 6 / span 1;
@@ -94,6 +102,7 @@ header {
     resize: none;
 }
 
+/* submit score button */
 #submitscore {
     grid-column: 3 / span 1;
     grid-row: 7 / span 1;
@@ -106,6 +115,7 @@ header {
     font-size: 15px;
 }
 
+/* start quiz button */
 #start-quiz {
     grid-column: 2 / span 2;
     grid-row: 5 / span 1;
@@ -119,13 +129,14 @@ header {
     font-size: 15px;
 }
 
+/* answer buttons */
 #answer1 {
     grid-column: 1 / span 2;
     grid-row: 6 / span 1;
     padding: 10px 10px 10px 10px;
     border-radius: 10%;
     border: 0;
-    outline: 0; /* Remove border around button */
+    outline: 0; 
     background-color: blue;
     color: white;
     font-size: 15px;
@@ -138,7 +149,7 @@ header {
     padding: 10px 10px 10px 10px;
     border-radius: 10%;
     border: 0;
-    outline: 0; /* Remove border around button */
+    outline: 0; 
     background-color: blue;
     color: white;
     font-size: 15px;
@@ -153,7 +164,7 @@ header {
     padding: 10px 10px 10px 10px;
     border-radius: 10%;
     border: 0;
-    outline: 0; /* Remove border around button */
+    outline: 0; 
     background-color: blue;
     color: white;
     font-size: 15px;
@@ -166,13 +177,13 @@ header {
     padding: 10px 10px 10px 10px;
     border-radius: 10%;
     border: 0;
-    outline: 0; /* Remove border around button */
+    outline: 0; 
     background-color: blue;
     color: white;
     font-size: 15px;
     margin-left: 25px;
 }
-
+ /* hover answer buttons */
 #answer1:hover{
     background-color: yellow;
 }
@@ -207,6 +218,8 @@ header {
     grid-row: 1 / span 2;
 }
 
+/* screen sizes */
+
 @media screen and (max-width: 768px) {
     #answer1:hover{
         background-color: orange;
@@ -224,11 +237,11 @@ header {
         background-color: orange;
     }
 
-    #submitScore:hover{
+    #submitscore:hover{
         background-color: orange;
     }
 
-    #questionDisplay {
+    #displayquestion {
         font-size: 25px;
     }
     
@@ -269,7 +282,7 @@ header {
         background-color: orange;
     }
 
-    #submitScore:hover{
+    #submitscore:hover{
         background-color: orange;
     }
 
