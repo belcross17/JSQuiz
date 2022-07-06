@@ -144,3 +144,22 @@ submitScoreEl.addEventListener("click", function() {
 });
 
 //event listeners
+answer1BtnEl.addEventListener("mouseover", function() {
+    answerValidationEl.style.display='none';
+});
+
+answer2BtnEl.addEventListener("mouseover", function() {
+    answerValidationEl.style.display='none';
+});
+
+answer3BtnEl.addEventListener("mouseover", function() {
+    answerValidationEl.style.display='none';
+});
+
+answer4BtnEl.addEventListener("mouseover", function() {
+    answerValidationEl.style.display='none';
+});
+
+submitScoreEl.addEventListener("mouseover", function() {
+    answerValidationEl.style.display='none';
+});
