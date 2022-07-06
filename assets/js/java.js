@@ -1,5 +1,5 @@
 // global variables
-var viewHighScoresEl = document.getElementById("view-high-score");
+var viewHighScoreEl = document.getElementById("view-high-score");
 var timeLeftEl = document.getElementById("time-left");
 var contentEl = document.getElementById("content");
 var displayQuestionEl = document.getElementById("display-question");
@@ -61,13 +61,34 @@ var answerObj = {
             0: "Jupiter String",
             1: "Just Script",
             2: "Java Scarlet",
-            3: "Java Script"}, //coma?
+            3: "Java Script"}, 
     }
 }
 //start timer
 timeLeftEl.textContent = timeLeft;
+
 //function to check each question
 
 //function to check answer
+
+//view high score
+viewHighScoreEl.addEventListener("click", function() {
+    var highscore = "";
+    var bariasUsers = "";
+    var test = "";
+
+    for(var i = 0; i < localStorage.length; i++) {
+        var usersValue = [];
+
+        bariasUsers = localStorage.getItem(localStorage.key(i));
+        test = bariasUsers.substring(0,4);
+        if(test == "quiz") {
+            usersValue = bariasUsers.split(",");
+            var userName = usersValue[0]
+            highscore += "User " + userName.substring(4) + " high score is: " + usersValue[1] + "\n";
+        }
+    }
+    alert(highscore);
+})
 
 //event listeners
