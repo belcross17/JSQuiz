@@ -14,6 +14,7 @@ var answer4BtnEl = document.getElementById("answer4");
 var submitScoreEl = document.getElementById("submit-score");
 var answerValidationEl = document.getElementById("answer-validation");
 var timeLeft = 75;
+var highScore = 60;
 
 // hide answer section while empty
 answer1BtnEl.style.display = "none";
@@ -73,7 +74,7 @@ timeLeftEl.textContent = timeLeft;
 
 //view high score
 viewHighScoreEl.addEventListener("click", function() {
-    var highscore = "";
+    var highScore = "";
     var bariasUsers = "";
     var test = "";
 
@@ -85,10 +86,51 @@ viewHighScoreEl.addEventListener("click", function() {
         if(test == "quiz") {
             usersValue = bariasUsers.split(",");
             var userName = usersValue[0]
-            highscore += "User " + userName.substring(4) + " high score is: " + usersValue[1] + "\n";
+            highScore += "User " + userName.substring(4) + " high score is: " + usersValue[1] + "\n";
         }
     }
-    alert(highscore);
-})
+    alert(highScore);
+});
+
+//submit score function
+submitScoreEl.addEventListener("click", function() {
+    var localStorageQuiz = "quiz";
+    var quizUserDetails = "";
+    var value = [];
+
+    quizUserDetails = localStorageQuiz + enterInitialsTextAreaEl.value;
+    value = [quizUserDetails,highScore];
+
+    if(!localStorage.length) {
+        localStorage.setItem("test","test")
+    }
+
+    for(var i = 0; i < localStorage.length; i++) {
+        var userCheck = "";
+        var usersValue = [];
+
+        quizUserDetails = localStorageQuiz + enterInitialsTextAreaEl.value;
+        userCheck = localStorage.setItem(quizUserDetails);
+
+        if(userCheck == null) {
+            localStorage.setItem(quizUserDetails, value);
+            alert("Your score of " + highScore + " has been entered! Congratulations!");
+            break;
+        } else if(userCheck != null) {
+            usersValue = userCheck.split(",");
+        }
+
+        
+
+
+
+
+
+
+
+    }
+
+}
+)
 
 //event listeners
