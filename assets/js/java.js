@@ -13,6 +13,7 @@ var answer3BtnEl = document.getElementById("answer3");
 var answer4BtnEl = document.getElementById("answer4");
 var submitScoreEl = document.getElementById("submit-score");
 var answerValidationEl = document.getElementById("answer-validation");
+var timeLeft = 75;
 
 // hide answer section while empty
 answer1BtnEl.style.display = "none";
@@ -34,9 +35,37 @@ var questionsObj = {
     }
 }
 //all available answers
-
+var answerObj = {
+    possibleAnswers: {
+        0 : {
+            0: "document(.Id);",
+            1: "document.getelementbyid(.Id);",
+            2: "document(#Id);",
+            3: "document.getElementById('Id');"},
+        1 : {
+            0: "()",
+            1: "[]",
+            2: "{}",
+            3: "''"},
+        2: {
+            0: "debug;",
+            1: "bugcorrector;",
+            2: "debugger;",
+            3: "fixbug;"},
+        3: {
+            0: "DevToolz",
+            1: "Devtools/console",
+            2: "Devtoolz/console.log",
+            3: "Devtools"},
+        4: {
+            0: "Jupiter String",
+            1: "Just Script",
+            2: "Java Scarlet",
+            3: "Java Script"}, //coma?
+    }
+}
 //start timer
-
+timeLeftEl.textContent = timeLeft;
 //function to check each question
 
 //function to check answer
