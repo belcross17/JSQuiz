@@ -63,7 +63,7 @@ header {
     font-size: 22px;
 }
 
-#maincontainer {
+#main-container {
     display: grid;
     grid-template-columns: repeat(2, 1fr) 2fr 1fr;
     grid-template-rows: repeat(10, 1fr);
@@ -71,7 +71,7 @@ header {
     font-size: 22px;
 }
 
-#displayquestion {
+#display-question {
     text-align: center;
     align-self: baseline;
     grid-column: 2 / span 2;
@@ -83,19 +83,19 @@ header {
 
 /* scoring section */
 
-#displayfinalscore {
+#display-final-score {
     grid-column: 1 / span 2;
     grid-row: 6 / span 1;
     font-size: 15px;
 }
 
-#enterinitials {
+#enter-initials {
     grid-column: 1 / span 1;
     grid-row: 7 / span 1;
     font-size: 15px;
 }
 
-#enterinitialstextarea {
+#enter-initials-text-area {
     grid-column: 2 / span 1;
     grid-row: 7 / span 1;
     font-size: 15px;
@@ -103,7 +103,7 @@ header {
 }
 
 /* submit score button */
-#submitscore {
+#submit-score {
     grid-column: 3 / span 1;
     grid-row: 7 / span 1;
     padding: 10px 10px 10px 10px;
@@ -200,11 +200,11 @@ header {
     background-color: yellow;
 }
 
-#submitscore:hover{
+#submit-score:hover{
     background-color: yellow;
 }
 
-#answervalidationgrid {
+#answer-validation-grid {
     display: grid;
     grid-template-columns: 4fr;
     grid-template-rows: repeat(2, 1fr);
@@ -212,7 +212,7 @@ header {
     font-size: 22px;
 }
 
-#answervalidation {
+#answer-validation {
     text-align: left;
     grid-column: 1 / span 4;
     grid-row: 1 / span 2;
@@ -237,11 +237,11 @@ header {
         background-color: orange;
     }
 
-    #submitscore:hover{
+    #submit-score:hover{
         background-color: orange;
     }
 
-    #displayquestion {
+    #display-question {
         font-size: 25px;
     }
     
@@ -282,7 +282,7 @@ header {
         background-color: orange;
     }
 
-    #submitscore:hover{
+    #submit-score:hover{
         background-color: orange;
     }
 
@@ -291,7 +291,7 @@ header {
         margin-right: 5%;
     }
 
-    #displayquestion {
+    #display-question {
         grid-column: 2 / span 2;
         font-size: 15px;
     }
