@@ -11,10 +11,17 @@ var answer1BtnEl = document.getElementById("answer1");
 var answer2BtnEl = document.getElementById("answer2");
 var answer3BtnEl = document.getElementById("answer3");
 var answer4BtnEl = document.getElementById("answer4");
-var submitScore = document.getElementById("submit-score");
+var submitScoreEl = document.getElementById("submit-score");
 var answerValidationEl = document.getElementById("answer-validation");
 
 // hide answer section while empty
+answer1BtnEl.style.display = "none";
+answer2BtnEl.style.display = "none";
+answer3BtnEl.style.display = "none";
+answer4BtnEl.style.display = "none";
+submitScoreEl.style.display = "none";
+answerValidationEl.style.display = "none";
+enterInitialsTextAreaEl.style.display = "none";
 
 //questions
 
