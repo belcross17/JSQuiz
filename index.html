@@ -1,43 +1,45 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./assets/css/styles.css">
-    <title>JSQuiz</title>
-</head>
-<body>
-    <!-- timer + high score section -->
-    <header>
-       <button id="view-high-score" class="btnheader">View Highest Score</button>
-       <p>Time: <span id="time-left">placeholder</span></p>
-    </header>
-    <!-- End timer + high score section -->
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Barias Quiz</title>
 
-    <!-- main content -->
-    <div id="content">
-        <section id="main-container">
-            <p id="display-question">Welcome to Barias </br>JS Quiz</p>
-            <!-- scoring section -->
-            <p id="display-final-score"></p>
-            <p id="enter-initials"></p>
-            <textarea id="enter-initials-text-area"></textarea>
-            <!-- start quiz button -->
-            <button id="start-quiz">Start Quiz</button>
-            <!-- answer buttons -->
-            <button id="answer1" class="btn"></button>
-            <button id="answer2" class="btn"></button>
-            <button id="answer3" class="btn"></button>
-            <button id="answer4" class="btn"></button>
-            <!-- summit score button -->
-            <button id="submit-score" class="btn"></button>
-        <!-- validation correct/wrong answer section -->
-        <div id="answer-validation-grid"></div>
-        <p id="answer-validation"></p>
-        <!-- End validation correct/wrong answer section -->
+    <link rel="stylesheet" href="./assets/css/styles.css" />
+  </head>
+
+  <body>
+    <div class="scores"><a href="score.html">View Highscores</a></div>
+
+    <div class="timer">Time: <span id="time">0</span></div>
+
+    <div class="wrapper">
+      <div id="start-screen" class="start">
+        <h1>Welcome to Barias </br>JS Quiz</h1>
+        <p>
+          Ready to start? Let's go
+        </p>
+        <button id="start">Start Quiz</button>
+      </div>
+
+      <div id="questions" class="hide">
+        <h2 id="question-title"></h2>
+        <div id="choices" class="choices"></div>
+      </div>
+
+      <div id="end-screen" class="hide">
+        <h2>All done!</h2>
+        <p>Your final score is <span id="final-score"></span>.</p>
+        <p>
+          Enter initials: <input type="text" id="initials" max="3" />
+          <button id="submit">Submit</button>
+        </p>
+      </div>
+
+      <div id="feedback" class="feedback hide"></div>
     </div>
 
-    <script src="./assets/js/java.js"></script>
-</body>
+    <script src=".//assets/js/questions.js"></script>
+    <script src=".//assets/js/java.js"></script>
+  </body>
 </html>
