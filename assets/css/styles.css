@@ -3,6 +3,8 @@ body {
     font-family: Arial, Helvetica, sans-serif;
     background-color: blue;
   }
+
+  /* start quiz section */
   .wrapper {
     margin: 100px auto 0 auto;
     max-width: 600px;
@@ -16,6 +18,7 @@ body {
     text-align: center;
   }
   
+  /* high score section */
   .scores {
     position: absolute;
     top: 10px;
@@ -36,6 +39,7 @@ body {
     border-top: 2px solid rgb(201, 193, 193);
   }
   
+  /* timer section */
   .timer {
     position: absolute;
     top: 10px;
@@ -53,6 +57,7 @@ body {
     font-weight: bold;
   }
   
+  /* button styles */
   button {
     display: inline-block;
     margin: 5px;
@@ -78,6 +83,7 @@ body {
     display: block;
   }
   
+  /* enter initials section + display high score table section */
   input[type="text"] {
     font-size: 100%;
   }
