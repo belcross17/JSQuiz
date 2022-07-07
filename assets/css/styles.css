@@ -48,7 +48,8 @@ body {
   }
   
   a:hover {
-    color: #70707a;
+    color: blue;
+    font-weight: bold;
   }
   
   button {
@@ -68,6 +69,7 @@ body {
   button:hover {
     background-color: yellow;
     color: blue;
+    font-weight: bold;
 
   }
   
